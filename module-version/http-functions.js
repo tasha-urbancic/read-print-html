@@ -5,11 +5,7 @@
 
 const https = require("https");
 
-function printHTML(html) {
-  console.log(html);
-}
-
-function getHTML(options, CB) {
+module.exports = function getHTML(options, CB) {
   https.get(`https://${options.host}${options.path}`, res => {
     res.setEncoding("utf8");
 
@@ -22,11 +18,4 @@ function getHTML(options, CB) {
       CB(rawData);
     });
   });
-}
-
-const requestOptions = {
-  host: "sytantris.github.io",
-  path: "/http-examples/step2.html"
 };
-
-getHTML(requestOptions, printHTML);
