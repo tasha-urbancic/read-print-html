@@ -18,10 +18,6 @@ function getAndPrintHTML(options) {
 
     res.on('end', () => {
       console.log(rawData);
-      // const parsedData = JSON.parse(rawData);
-      // for (let i = 0; i < 10; i++) {
-      //   console.log(parsedData[i].version);
-      // }
     });
 
   });
@@ -29,7 +25,7 @@ function getAndPrintHTML(options) {
 
 const requestOptions = {
   host: 'sytantris.github.io',
-  path: '/http-examples/step2.html'
+  path: '/http-examples/step3.html'
 };
 
 getAndPrintHTML(requestOptions);

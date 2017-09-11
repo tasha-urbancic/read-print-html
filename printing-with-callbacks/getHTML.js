@@ -26,7 +26,7 @@ function getHTML(options, CB) {
 
 const requestOptions = {
   host: "sytantris.github.io",
-  path: "/http-examples/step2.html"
+  path: "/http-examples/step4.html"
 };
 
 getHTML(requestOptions, printHTML);

@@ -6,8 +6,6 @@ function getAndPrintHTMLChunks() {
     path: "/http-examples/step1.html"
   };
 
-  'https://' + requestOptions.host + requestOptions.path
-
   https.get(`https://${requestOptions.host}${requestOptions.path}`, res => {
     res.setEncoding("utf8");
 
